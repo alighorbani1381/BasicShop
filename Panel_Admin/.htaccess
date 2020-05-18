@@ -1,0 +1,45 @@
+RewriteEngine on
+#Main Route
+RewriteRule ^dashbord?$ index.php
+
+#Admin Route
+RewriteRule ^Plan/Store?$ index.php?c=Admin&a=PlanAdd
+
+#Categories Route
+RewriteRule ^category?$ index.php?c=procat&a=list_procat
+RewriteRule ^category/add?$ index.php?c=procat&a=add_procat
+RewriteRule ^category/edit/([0-9]+) index.php?c=procat&a=edit&id=$1
+RewriteRule ^category/delete/([0-9]+) index.php?c=procat&a=delete&id=$1
+
+#Product Route
+RewriteRule ^product?$ index.php?c=Product&a=list_product&page=1
+RewriteRule ^product/add?$ index.php?c=product&a=add_product
+RewriteRule ^product/edit/([0-9]+) index.php?c=product&a=edit&id=$1
+RewriteRule ^product/delete/([0-9]+) index.php?c=product&a=delete&id=$1
+
+#Order Route
+RewriteRule ^order/wait?$ index.php?c=order&a=order_list_wait
+RewriteRule ^order?$ index.php?c=order&a=order_successful
+
+#File Uploader Route
+RewriteRule ^file?$ index.php?c=uploader&a=List
+RewriteRule ^file/add?$ index.php?c=uploader&a=add_file
+RewriteRule ^file/add/([0-9]+)?$ index.php?c=uploader&a=add_file&pic=$1
+
+#Profile Route
+RewriteRule ^Profile?$ index.php?c=Admin&a=profile
+RewriteRule ^Profile/Edit/([0-9]+) index.php?c=Admin&a=profile_edit&id=$1
+RewriteRule ^Profile/ChangePassword index.php?c=Admin&a=ChangePassword
+RewriteRule ^Profile/Activity/([0-9]+) index.php?c=Admin&a=ProfileActivity&id=$1
+
+RewriteRule ^Logout?$ index.php?c=login&a=logout
+
+#User Route
+RewriteRule ^users?$ index.php?c=user&a=list
+RewriteRule ^users/dontpay index.php?c=user&a=dontpay
+RewriteRule ^users/delete/([0-9]+) index.php?c=user&a=delete&id=$1
+RewriteRule ^users/activity/([0-9]+) index.php?c=user&a=activity&id=$1
+
+#Settings Route
+RewriteRule ^settings/slider?$ index.php?c=settings&a=list_slider
+RewriteRule ^settings/slider/add?$ index.php?c=settings&a=add_slider

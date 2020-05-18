@@ -1,0 +1,64 @@
+.customing {
+    color: #9f0000;
+}
+
+.chart {
+    margin-bottom: 2EM;
+    text-align: right;
+    font-family: IRANSANSWEB;
+}
+
+.panel-heading {
+    font-weight: bold;
+    font-size: 19px;
+    font-family: IRANSANSWEB;
+}
+
+.max_pay {
+    width: 105px;
+    height: 105px;
+    display: inline;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 1px 1px 7px #d5d5d5;
+}
+
+.top_product {
+    padding-bottom: 19px;
+    border: 3px solid #d97391;
+    margin-bottom: 0 auto;
+    padding-right: 7px;
+    border-radius: 7px;
+}
+
+.alia {
+    display: block;
+    color: #424040;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.max_product_img {
+    background-color: #e32274;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 35px;
+}
+
+.top_product .Item_product:last-child {
+    border-bottom: none;
+}
+
+.Item_product {
+    margin: 8px auto;
+    position: relative;
+    height: 142px;
+    border-bottom: 2px dotted #d9d7d7;
+    padding: 10px 17px;
+}
+
+.Item-product-title {
+    display: inline-block;
+    line-height: 60px;
+}
