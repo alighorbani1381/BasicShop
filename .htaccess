@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+
+#User Rules
+RewriteRule ^Login?$ index.php?c=user&a=login
+RewriteRule ^Signup?$ index.php?c=user&a=signup
+RewriteRule ^Logout?$ index.php?c=user&a=logout
+
+#Basket Route
+RewriteRule ^BasketList?$ index.php?c=basket&a=list_basket
